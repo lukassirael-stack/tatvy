@@ -1,9 +1,37 @@
 [
-  { "nadpis": "Pobyt ve světle", "text": "Vícedenní ztišení a obnova ve světle.", "url": "https://oaza-adamanthea.cz/pobyt-ve-svetle.html" },
-  { "nadpis": "Portálová zahrada", "text": "Místo síly pod širým nebem.", "url": "https://oaza-adamanthea.cz/portalova-zahrada.html" },
-  { "nadpis": "Kraniosakrální terapie", "text": "Jemné doteky, které vracejí tělo do rovnováhy.", "url": "https://oaza-adamanthea.cz/kraniosakralni-terapie.html" },
-  { "nadpis": "Rodové klíče", "text": "Odemkni vzorce svého rodu a uvolni, co tě tíží.", "url": "https://oaza-adamanthea.cz/rodove-klice.html" },
-  { "nadpis": "Pronájem prostor", "text": "Hledáš místo pro svůj kurz či setkání?", "url": "https://oaza-adamanthea.cz/pronajem-prostor.html" },
-  { "nadpis": "Vesmírný kód zrození", "text": "Odhal svůj hvězdný původ v našem kvízu.", "url": "https://kviz.oaza-adamanthea.cz" },
-  { "nadpis": "Nabídka služeb", "text": "Projdi si vše, co Oáza nabízí.", "url": "https://oaza-adamanthea.cz/nabidka-sluzeb.html" }
+  {
+    "nadpis": "Pobyt ve světle",
+    "text": "Dopřej si několik dní klidu, ticha a návratu k tomu nejdůležitějšímu – k sobě.",
+    "url": "https://oaza-adamanthea.cz/pobyt-ve-svetle.html"
+  },
+  {
+    "nadpis": "Portálová zahrada",
+    "text": "Vstup do jedinečného prostoru, kde se příroda, energie a vnitřní klid setkávají v harmonii.",
+    "url": "https://oaza-adamanthea.cz/portalova-zahrada.html"
+  },
+  {
+    "nadpis": "Kraniosakrální terapie",
+    "text": "Jemná cesta k uvolnění napětí, obnově rovnováhy a hlubokému odpočinku těla i duše.",
+    "url": "https://oaza-adamanthea.cz/kraniosakralni-terapie.html"
+  },
+  {
+    "nadpis": "Rodové klíče",
+    "text": "Objev a uvolni skryté rodové vzorce, které mohou ovlivňovat tvůj život i vztahy.",
+    "url": "https://oaza-adamanthea.cz/rodove-klice.html"
+  },
+  {
+    "nadpis": "Pronájem prostor",
+    "text": "Vytvoř svůj seminář, workshop nebo setkání v inspirativním prostředí Oázy.",
+    "url": "https://oaza-adamanthea.cz/pronajem-prostor.html"
+  },
+  {
+    "nadpis": "Vesmírný kód zrození",
+    "text": "Odhal svůj jedinečný hvězdný otisk a poznej dary, které sis přinesl na tuto cestu.",
+    "url": "https://kviz.oaza-adamanthea.cz"
+  },
+  {
+    "nadpis": "Nabídka služeb",
+    "text": "Prozkoumej pestrou nabídku terapií, harmonizací, rituálů a transformačních zážitků.",
+    "url": "https://oaza-adamanthea.cz/nabidka-sluzeb.html"
+  }
 ]
