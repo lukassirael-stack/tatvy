@@ -143,6 +143,7 @@
   .settings[open] summary::after{content:'–'}
   .settings .body{padding:4px 18px 20px}
   .loc-line{font-size:16px;color:var(--cream-dim);margin-bottom:14px;font-style:italic}
+  .loc-note{font-size:16px;line-height:1.5;color:var(--cream-dim);margin-bottom:16px}
   .loc-line b{color:var(--cream);font-style:normal}
   .field{margin-bottom:12px}
   .field label{display:block;font-family:'Jost',sans-serif;font-size:10px;letter-spacing:.18em;
@@ -269,6 +270,7 @@
   <details class="settings">
     <summary>Místo a východ slunce</summary>
     <div class="body">
+      <p class="loc-note">Tatvy se počítají od východu slunce, který je na každém místě v trochu jiný čas. Proto zadej své místo — appka pak ukáže tatvy přesně pro tebe. Polohu zjistíme jen když na to klikneš, nebo ji vyplň ručně.</p>
       <div class="loc-line" id="locLine">—</div>
       <div class="two">
         <div class="field"><label>Šířka</label><input id="lat" type="number" step="0.0001"></div>
@@ -546,11 +548,20 @@ let NABIDKY=FALLBACK_NABIDKY.slice();
 let lastTip=-1;
 function renderTip(){
   if(!NABIDKY.length)return;
-  let i;do{i=Math.floor(Math.random()*NABIDKY.length);}while(NABIDKY.length>1&&i===lastTip);
-  lastTip=i;const n=NABIDKY[i];
+  var pinned=NABIDKY.filter(function(x){return x&&x.pin===true;});
+  var shuffleBtn=document.getElementById('tipShuffle');
+  var n;
+  if(pinned.length){
+    n=pinned[0];                       // připíchnutá nabídka má přednost
+    if(shuffleBtn)shuffleBtn.style.display='none';
+  }else{
+    if(shuffleBtn)shuffleBtn.style.display='';
+    var i;do{i=Math.floor(Math.random()*NABIDKY.length);}while(NABIDKY.length>1&&i===lastTip);
+    lastTip=i;n=NABIDKY[i];
+  }
   document.getElementById('tipNadpis').textContent=n.nadpis;
   document.getElementById('tipText').textContent=n.text||'';
-  const a=document.getElementById('tipLink');
+  var a=document.getElementById('tipLink');
   if(n.url){a.href=n.url;a.style.pointerEvents='auto';}else{a.removeAttribute('href');a.style.pointerEvents='none';}
 }
 function loadNabidky(){
